@@ -1,150 +1,112 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+  padding-top: 100px;
+}
 
-        body {
-            margin: 0;
-            font-family: Poppins;
-            padding-top: 100px;
-        }
+p {
+  line-height: 150%;
+}
 
-        
-        p{
-          line-height: 150%;
-        }
+li {
+  line-height: 150%;
+}
 
-        li{
-          line-height: 150%;
-        }
+.navbar {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
 
-        .navbar {
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-          }
-        
-        .navbar.hidden {
-            transform: translateY(-100%);
-            opacity: 0;
-          }
+.navbar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
 
-        .navbar-brand {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-        .card-text {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-        .fixed-height {
-            height: 225px;
-        }
- 
-        .animated-text {
-            font-size: 4rem;
-            position: relative;
-        }
-        
-        .dots {
-            color: #0B1132;
-        }
-        
-        .dots::after {
-            content: '';
-            position: absolute;
-            animation: dots 2.5s steps(1, end) infinite;
-        }
-        
-        @keyframes dots {
-            0%, 25% {
-                content: '';
-            }
-            50% {
-                content: '.';
-            }
-            75% {
-                content: '..';
-            }
-            100% {
-                content: '...';
-            }
-        }
-        
-  footer a{
-color: #000;
-text-decoration: none;
-  }
+.fixed-height {
+  height: 225px;
+}
 
-  footer a:hover{
-color: #157347;
-transition: 0.5s;
-  }
+footer a {
+  color: #000;
+  text-decoration: none;
+}
 
+footer a:hover {
+  color: #157347;
+  transition: 0.5s;
+}
 
-  .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .card:hover {
-    transform: translateY(-10px); /* Alza leggermente la card */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Ombra più marcata */
-  }
-
+.card:hover {
+  transform: translateY(-10px); /* Alza leggermente la card */
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.3);
   
-  .img-overview {
-    height: auto; /* Altezza automatica per mantenere le proporzioni */
-    max-height: 300px; /* Limita l'altezza su desktop */
-    object-fit: contain;
-  }
+}
 
-
+.img-overview {
+  height: auto; /* Altezza automatica per mantenere le proporzioni */
+  max-height: 300px; /* Limita l'altezza su desktop */
+  object-fit: contain;
+}
 
 /*-----------------------------------STILI------------------------------------------------------------------ */
 
-.nav-item{
-    padding: 2rem;
+.nav-item {
+  padding: 2rem;
 }
 
 /*-----------------------------------NAVBAR--NUOVA------------------------------------------------------------------ */
 
- /* Custom styling to control navbar height */
- .custom-navbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .custom-navbar a.nav-title {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-  }
-  .custom-navbar a.nav-title:hover {
-    color: #157347; /* Match button color */
-    transition-duration: 0.5s;
-  }
- 
-.nav-title br{
-    display: none;
+/* Custom styling to control navbar height */
+.custom-navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.custom-navbar a.nav-title {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.custom-navbar a.nav-title:hover {
+  color: #157347; /* Match button color */
+  transition-duration: 0.5s;
 }
 
-.nav-title{
+.nav-title br {
+  display: none;
+}
+
+.nav-title {
   font-family: 'BespokeStencil-Medium', sans-serif;
 }
 
 @media (max-width: 768px) {
-    .nav-title br{
-        display: inline;
-    }
+  .nav-title br {
+      display: inline;
+  }
 
-    body{
-        padding-top: 100px;
-    }
+  body {
+      padding-top: 100px;
+  }
 
-    .img-overview {
+  .img-overview {
       max-height: 250px; /* Altezza più piccola per dispositivi mobili */
-    }
-
-
+  }
 }
 
 /*-----------------------------------PROGRESSBAR------------------------------------------------------------------ */
-
 
 /* Progress bar container */
 #progress-container {
@@ -168,7 +130,6 @@ transition: 0.5s;
 
 /*-----------------------------------CUSTOMFONT------------------------------------------------------------------ */
 
-
 @font-face {
   font-family: 'BespokeStencil-Medium';
   src: url('font-custom/BespokeStencil-Medium.woff2') format('woff2'),
@@ -188,3 +149,94 @@ transition: 0.5s;
   font-style: normal;
 }
 
+/*----------------------------------- DARK MODE OVERRIDES ------------------------------------------------------------------ */
+
+/* Impostazioni generali per Dark Mode */
+body {
+  background-color: #121212;
+  color: #f3f3f3;
+}
+
+/* Navbar, Footer, Cards e altre aree strutturali */
+.bg-body-tertiary,
+.navbar,
+footer,
+.card,
+.card-body {
+  background-color: #1e1e1e !important;
+  color: #f3f3f3!important;
+}
+
+
+.card-body, .card{
+  background-color: #2f2f2f !important;
+  color: #f3f3f3!important;
+}
+
+
+/* Testi e link */
+.text-dark,
+.text-body-secondary,
+a,
+h1,
+h2,
+h5,
+p,
+.card-text {
+  color: #f3f3f3 !important;
+}
+
+/* Testi secondari con minore saturazione */
+.text-body-secondary {
+  color: #b0b0b0 !important;
+}
+
+.keywords{
+  color: #45a045 !important;
+}
+
+/* Uniforma i bordi */
+.border,
+.border-bottom,
+.border-top,
+.border-success {
+  border-color: #333 !important;
+}
+
+/* Navbar custom: titolo e hover */
+.custom-navbar a.nav-title {
+  color: #f3f3f3 !important;
+}
+.custom-navbar a.nav-title:hover {
+  color: #45a045 !important;
+}
+
+/* Footer link */
+footer a {
+  color: #f3f3f3 !important;
+}
+footer a:hover {
+  color: #45a045 !important;
+  transition: 0.5s;
+}
+
+/* Bottoni (btn-success) */
+.btn-success {
+  background-color: #7f5af0 !important;
+  border-color: #7f5af0 !important;
+}
+.btn-success:hover {
+  background-color: #45a045 !important;
+  border-color: #45a045 !important;
+}
+
+/* Progress bar */
+#progress-container {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+#progress-bar {
+  background-color: #4caf50 !important;
+}
+
+
+       
