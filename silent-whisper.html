@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Whisper</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-leo.css">
+    <link rel="icon" href="img/fav-icon-leo.svg" type="image/svg+xml">
+
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar custom-navbar bg-body-tertiary fixed-top py-2 border-bottom border-2">
+    <div class="container d-flex justify-content-center align-items-center">
+      <!-- Center Title -->
+      <a href="index.html" class="nav-title text-center"><h1>Leonardo Madia's Portfolio</h1></a>
+    </div>
+  </nav>
+
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+    
+
+    <div class="container py-5">
+      <!-- Title and Video Section -->
+      <div class="text-center mb-5">
+        <h1>Silent Whisper</h1>
+        <!-- Contenitore per limitare la larghezza -->
+        <div class="mx-auto" style="max-width: 600px;">
+          <div class="ratio ratio-16x9 my-4">
+            <iframe width="1280" height="480" src="https://www.youtube.com/embed/0Ft88WINl80" title="Silent Whisper - Full Game Clips" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container py-5">
+      <!-- Game Overview -->
+      <div class="mb-5">
+        <h2 class="section-title text-center mb-4">Game Overview</h2>
+        <div class="row align-items-center mb-4">
+          <div class="col-md-8">
+            <ul>
+              <li><strong>Summary:</strong> 2D top-down action with a medieval setting <br> and a disturbing theme</li>
+              <li><strong>Roles:</strong> Game Designer, Level Designer and Programmer</li>
+              <li><strong>Project Type:</strong> Academic</li>
+              <li><strong>Software:</strong> Unity</li>
+              <li><strong>Duration:</strong> Nov 2021 - April 2022</li>
+              <li><strong>Team Size:</strong> 3</li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="img/silent-whisper-loop.png" alt="Game Design Image" class="img-fluid rounded img-overview">
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="container my-5">
+          <!-- Title -->
+          <h2 class="text-center mb-5">Contributions</h2>
+      
+          <!-- First Section -->
+          <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+              <h3 class="py-4">Concept</h3>
+              <p>Initially the idea was to create a very <b>difficult game</b> with a <b>strong narration</b> component.
+                Unfortunately <b>the project was downsized</b> after the fourth team member decided to leave the academy and his narrative designer role. As result we decided to mainly <b>focus on the combat</b> gameplay, repurposing the narrative material to create a <b>lore</b>.</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <div class="ratio ratio-16x9">
+                <iframe width="1280" height="480" src="https://www.youtube.com/embed/c9vyxeWhyQ8" title="Silent Whisper - Lore" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded"></iframe>
+              </div>
+              <div class="text-muted fst-italic text-center mt-2">
+                In-game footage showing how lore is conveyed in the game.
+              </div>
+            </div>
+          </div>
+      
+          <!-- Second Section -->
+          <div class="row align-items-center py-5">
+            <div class="col-md-6">
+              <h3 class="py-4">Game Design & Level Design</h3>
+              <p>I designed most of the combat system, like the interaction between the various combat mechanics and the <b>enemies behaviour</b>. For example, I enhanced the <b>fast-paced combat</b> by increasing hit knockback, in order to force player to repositioning after each attack. I designed also the first game scenario as a sort of <b>safe playground</b> where players can experiment with game mechanics without being punished.</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <div class="ratio ratio-16x9 my-4">
+                <div class="col-md-6 text-center">
+                  <div class="ratio ratio-16x9 mt-3">
+                    <iframe width="660" height="371" src="https://www.youtube.com/embed/of_1rDkwxas" title="Silent Whisper - Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded"></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="text-muted fst-italic text-center mt-2">
+                In-game footage showing the mentioned safe playground
+              </div>
+            </div>
+        </div>
+
+
+        <!-- third Section -->
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="py-4">Programming</h3>
+            <p>I wrote in C# <b>most of the game scripts</b>, excluding only part of the UI system. The most difficult challenge was to manage the <b>hitboxes</b> to make them match the <b>animations</b>. For example, the damage hitbox had to appear only at a certain point during the attack script.</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="img/silent-3.png" alt="Game Design Image" class="img-fluid rounded">
+            <div class="text-muted fst-italic text-center mt-2">
+              Screenshot of an animation frame and its damage hitbox
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      <div class="container my-5">
+        <!-- Title -->
+        <h2 class="text-center mb-5">What did I learn?</h2>
+       <!-- First Section -->
+       <div class="row align-items-center mb-4">
+        <div class="col-md-6 align-items-center">
+          <p>The <b>onboarding</b> phase is crucial.<br>
+            The combat was fun and compelling when we played it, but other players could not experience it to the fullest because we failed to teach properly how the combat mechanics worked.</p>
+        </div>
+        <div class="col-md-6 align-items-center">
+          <p>Without the right <b>HUD</b> the player is lost.
+            We tried to make a diegetic health system, but the result was that players didn't understand when they were close to the Game Over.<br> <br>
+            Take into account <b>unexpected problems</b> during the developing time.
+          </p>
+        </div>
+      </div>
+        </div>
+        
+        <footer class="bg-body-tertiary py-4 border-top border-2">
+          <div class="container">
+              <div class="row">
+                  <!-- Contacts Section -->
+                  <div class="col-md-6">
+                      <h5>Contacts</h5>
+                      <p class="mb-1 mt-3">madialeonardo@gmail.com</p>
+                      <p class="mt-2">+39 3403809792</p>
+                  </div>
+                  <!-- Links Section -->
+                  <div class="col-md-6">
+                      <h5>Links</h5>
+                      <ul class="list-unstyled">
+                          <li class="mt-3">
+                              <a href="img/Leonardo_Madia_cv.pdf" download>Download CV</a>
+                          </li>
+                          <li class="mt-2">
+                              <a href="https://www.linkedin.com/in/leonardo-madia-8a977b262/" target="_blank">LinkedIn</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  let lastScrollTop = 0;   // Per tenere traccia della posizione precedente dello scroll
+  let ticking = false;     // Flag per evitare chiamate multiple
+
+  const navbar = document.querySelector(".navbar");
+  const progressContainer = document.getElementById("progress-container");
+  const progressBar = document.getElementById("progress-bar");
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        // Calcola lo scroll attuale
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Mostra o nascondi la navbar in base allo scroll
+        if (scrollTop > lastScrollTop) {
+          // Scorrendo verso il basso: nascondi la navbar
+          navbar.classList.add("hidden");
+        } else {
+          // Scorrendo verso l'alto: mostra la navbar
+          navbar.classList.remove("hidden");
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+
+        // Aggiorna la larghezza della progress bar
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrolled + "%";
+
+        // Se la navbar è nascosta, mostra la progress bar, altrimenti nascondila
+        if (navbar.classList.contains("hidden")) {
+          progressContainer.style.display = "block";
+        } else {
+          progressContainer.style.display = "none";
+        }
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+</script>
+
+</body>
+</html>

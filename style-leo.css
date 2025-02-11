@@ -1,0 +1,190 @@
+
+        body {
+            margin: 0;
+            font-family: Poppins;
+            padding-top: 100px;
+        }
+
+        
+        p{
+          line-height: 150%;
+        }
+
+        li{
+          line-height: 150%;
+        }
+
+        .navbar {
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+          }
+        
+        .navbar.hidden {
+            transform: translateY(-100%);
+            opacity: 0;
+          }
+
+        .navbar-brand {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .card-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        .fixed-height {
+            height: 225px;
+        }
+ 
+        .animated-text {
+            font-size: 4rem;
+            position: relative;
+        }
+        
+        .dots {
+            color: #0B1132;
+        }
+        
+        .dots::after {
+            content: '';
+            position: absolute;
+            animation: dots 2.5s steps(1, end) infinite;
+        }
+        
+        @keyframes dots {
+            0%, 25% {
+                content: '';
+            }
+            50% {
+                content: '.';
+            }
+            75% {
+                content: '..';
+            }
+            100% {
+                content: '...';
+            }
+        }
+        
+  footer a{
+color: #000;
+text-decoration: none;
+  }
+
+  footer a:hover{
+color: #157347;
+transition: 0.5s;
+  }
+
+
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px); /* Alza leggermente la card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Ombra più marcata */
+  }
+
+  
+  .img-overview {
+    height: auto; /* Altezza automatica per mantenere le proporzioni */
+    max-height: 300px; /* Limita l'altezza su desktop */
+    object-fit: contain;
+  }
+
+
+
+/*-----------------------------------STILI------------------------------------------------------------------ */
+
+.nav-item{
+    padding: 2rem;
+}
+
+/*-----------------------------------NAVBAR--NUOVA------------------------------------------------------------------ */
+
+ /* Custom styling to control navbar height */
+ .custom-navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .custom-navbar a.nav-title {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  .custom-navbar a.nav-title:hover {
+    color: #157347; /* Match button color */
+    transition-duration: 0.5s;
+  }
+ 
+.nav-title br{
+    display: none;
+}
+
+.nav-title{
+  font-family: 'BespokeStencil-Medium', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .nav-title br{
+        display: inline;
+    }
+
+    body{
+        padding-top: 100px;
+    }
+
+    .img-overview {
+      max-height: 250px; /* Altezza più piccola per dispositivi mobili */
+    }
+
+
+}
+
+/*-----------------------------------PROGRESSBAR------------------------------------------------------------------ */
+
+
+/* Progress bar container */
+#progress-container {
+  position: fixed;
+  top: 0;  /* Verrà comunque nascosto quando la navbar è visibile */
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1); /* Sfondo opaco, opzionale */
+  z-index: 9999;
+  display: none; /* Di default nascosta */
+}
+
+/* Progress bar vera e propria */
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #157347; /* Colore della barra (personalizzabile) */
+  transition: width 0.25s ease-out;
+}
+
+/*-----------------------------------CUSTOMFONT------------------------------------------------------------------ */
+
+
+@font-face {
+  font-family: 'BespokeStencil-Medium';
+  src: url('font-custom/BespokeStencil-Medium.woff2') format('woff2'),
+       url('font-custom/BespokeStencil-Medium.woff') format('woff'),
+       url('font-custom/BespokeStencil-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil-Bold';
+  src: url('font-custom/BespokeStencil-Bold.woff2') format('woff2'),
+       url('font-custom/BespokeStencil-Bold.woff') format('woff'),
+       url('font-custom/BespokeStencil-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
