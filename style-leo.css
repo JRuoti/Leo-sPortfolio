@@ -233,6 +233,11 @@ border: solid 3px #333 !important;
   color: #b0b0b0 !important;
 }
 
+.keywords{
+  border-color: #7f5af0 !important;
+  color: #f3f3f3 !important;
+  font-family: BespokeStencil-Medium;
+}
 /*-----------------------------------CUSTOMFONT------------------------------------------------------------------ */
 
 @font-face {
