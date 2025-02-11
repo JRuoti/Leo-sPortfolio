@@ -106,6 +106,10 @@ footer a:hover {
   .img-overview {
       max-height: 250px; /* Altezza più piccola per dispositivi mobili */
   }
+
+  .leoport{
+    border: solid 0.5px #333 !important;
+    }
 }
 
 /*-----------------------------------PROGRESSBAR------------------------------------------------------------------ */
@@ -128,27 +132,6 @@ footer a:hover {
   height: 100%;
   background-color: #7f5af0; /* Colore della barra (personalizzabile) */
   transition: width 0.25s ease-out;
-}
-
-/*-----------------------------------CUSTOMFONT------------------------------------------------------------------ */
-
-@font-face {
-  font-family: 'BespokeStencil-Medium';
-  src: url('font-custom/BespokeStencil-Medium.woff2') format('woff2'),
-       url('font-custom/BespokeStencil-Medium.woff') format('woff'),
-       url('font-custom/BespokeStencil-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'BespokeStencil-Bold';
-  src: url('font-custom/BespokeStencil-Bold.woff2') format('woff2'),
-       url('font-custom/BespokeStencil-Bold.woff') format('woff'),
-       url('font-custom/BespokeStencil-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
 }
 
 /*----------------------------------- DARK MODE OVERRIDES ------------------------------------------------------------------ */
@@ -249,3 +232,25 @@ border: solid 3px #333 !important;
 .subtitle-video{
   color: #b0b0b0 !important;
 }
+
+/*-----------------------------------CUSTOMFONT------------------------------------------------------------------ */
+
+@font-face {
+  font-family: 'BespokeStencil-Medium';
+  src: url('font-custom/BespokeStencil-Medium.woff2') format('woff2'),
+       url('font-custom/BespokeStencil-Medium.woff') format('woff'),
+       url('font-custom/BespokeStencil-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BespokeStencil-Bold';
+  src: url('font-custom/BespokeStencil-Bold.woff2') format('woff2'),
+       url('font-custom/BespokeStencil-Bold.woff') format('woff'),
+       url('font-custom/BespokeStencil-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
