@@ -94,7 +94,7 @@ footer a:hover {
   font-family: 'BespokeStencil-Medium', sans-serif;
 }
 
-@media (max-width: 854px) {
+@media (max-width: 768px) {
   .nav-title br {
       display: inline;
   }
@@ -111,6 +111,26 @@ footer a:hover {
     border: solid 0.5px #333 !important;
     }
 }
+
+
+@media (max-width: 389px) {
+  .nav-title br {
+      display: inline;
+  }
+
+  body {
+      padding-top: 100px;
+  }
+
+  .img-overview {
+      max-height: 250px; /* Altezza più piccola per dispositivi mobili */
+  }
+
+  .leoport{
+    border: solid 0.5px #333 !important;
+    }
+}
+
 
 /*-----------------------------------PROGRESSBAR------------------------------------------------------------------ */
 
