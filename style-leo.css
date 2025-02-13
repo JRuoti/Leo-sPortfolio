@@ -6,6 +6,7 @@ body {
 
 p {
   line-height: 150%;
+  
 }
 
 li {
@@ -63,6 +64,11 @@ footer a:hover {
   object-fit: contain;
 }
 
+.nav-title h1 {
+  white-space: nowrap;
+}
+
+
 /*-----------------------------------STILI------------------------------------------------------------------ */
 
 .nav-item {
@@ -113,23 +119,7 @@ footer a:hover {
 }
 
 
-@media (max-width: 389px) {
-  .nav-title br {
-      display: inline;
-  }
 
-  body {
-      padding-top: 100px;
-  }
-
-  .img-overview {
-      max-height: 250px; /* Altezza più piccola per dispositivi mobili */
-  }
-
-  .leoport{
-    border: solid 0.5px #333 !important;
-    }
-}
 
 
 /*-----------------------------------PROGRESSBAR------------------------------------------------------------------ */
